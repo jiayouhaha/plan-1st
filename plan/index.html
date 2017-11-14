@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>推荐</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<div class="jz">
+		<img src="img/loading.png" alt=""  height="35" width='35'>
+		
+	</div>
+	<div class="mask">
+		<h3>加载中...</h3>
+	</div>
+	<div class="xr">
+		<!-- <div class="content">
+			<div class="left f_left">
+			</div>
+			<div class="right">
+				<p>看完纽约高中的中文试卷，我可能是个<br/>假中国人</p>
+				<em>其他</em>
+				<span class="num">3</span>
+				<span>评论</span>
+				<i>2017-10-12 23:24:44</i>
+				<img src="img/icon_hot.png" alt="" height="20" width='20'>
+			</div>
+			<!-- <div class="line"></div> -->
+			<!-- </div> -->
+		<!-- <div class="content">
+			<div class="left f_left">
+			</div>
+			<div class="right ">
+				<p>看完纽约高中的中文试卷，我可能是个<br/>假中国人</p>
+				<em>其他</em>
+				<span>3</span>
+				<span>评论</span>
+				<i>2017-10-12 23:24:44</i>
+			</div>
+			<div class="line"></div>
+		</div>
+		<div class="content">
+			<div class="left f_left">
+			</div>
+			<div class="right">
+				<p>看完纽约高中的中文试卷，我可能是个<br/>假中国人</p>
+				<em>其他</em>
+				<span>3</span>
+				<span>评论</span>
+				<i>2017-10-12 23:24:44</i>
+			</div>
+			<div class="line"></div>
+		</div>
+		<div class="content">
+			<div class="left f_left">
+			</div>
+			<div class="right">
+				<p>看完纽约高中的中文试卷，我可能是个<br/>假中国人</p>
+				<em>其他</em>
+				<span>3</span>
+				<span>评论</span>
+				<i>2017-10-12 23:24:44</i>
+			</div>
+			<div class="line"></div>
+		</div>
+		<div class="content">
+			<div class="left f_left"">
+			</div>
+			<div class="right">
+				<p>看完纽约高中的中文试卷，我可能是个<br/>假中国人</p>
+				<em>其他</em>
+				<span>3</span>
+				<span>评论</span>
+				<i>2017-10-12 23:24:44</i>
+			</div>
+			<div class="line"></div>
+		</div>
+		<div class="content">
+			<div class="left f_left">
+			</div>
+			<div class="right">
+				<p>看完纽约高中的中文试卷，我可能是个<br/>假中国人</p>
+				<em>其他</em>
+				<span>3</span>
+				<span>评论</span>
+				<i>2017-10-12 23:24:44</i>
+				<img src="img/icon_hot.png" alt="" height="20" width='20'>
+			</div>
+			<div class="line"></div>
+		</div> -->
+	</div>
+	<div class="footer">
+		<div class="active">
+			<img src="img/icon_page_active.png" alt="" >
+			<h5 style="color:#D27A76">推荐</h5>
+		</div>
+
+		<div class="video">
+			<img src="img/icon_video.png" alt="">
+			<h5>推荐</h5>
+		</div>
+	</div>
+	<script type="text/html" id='remTemplate'>
+		<!-- list为一个数组 -->
+		{{each list}}
+		<div class="content">
+			<div class="content-in">
+				<div class="left f_left"><img src="{{$value.cover_img}}" alt="" height="60" width='60'></div>		
+				<div class="right">
+					<p>{{$value.title}}</p>
+					<em>{{$value.type|typeFilter}}</em>
+					<span>{{$value.comments_num}}</span>
+					<span>评论</span>
+					<span id="spot"></span>
+					<i>{{$value.created_at}}</i>
+					<img src="{{$value.hot}}" alt="" height="20" width='20'>
+				</div>
+			</div>
+			<div class="line"></div>
+		</div>
+		{{/each}}
+	</script>
+	<script type="text/javascript" src='js/jquery-2.1.1.min.js'></script>
+	<script type="text/javascript" src='js/template.js'></script>
+	<script type="text/javascript" src='js/index.js'></script>
+</body>
+</html>
