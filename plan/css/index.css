@@ -6,6 +6,8 @@ body,html{
 .content{
 	margin-top:12px;
 	height: 80px;
+	position: relative;
+
 
 }
 
@@ -51,6 +53,7 @@ body,html{
 	font-size: 12px;
 	font-style:normal;
 	color:#888BA2;
+	margin-left: 3px;
 }
 .right img{
 	/*background-color:red;*/
@@ -58,11 +61,16 @@ body,html{
 	height: 30px;
 }
 .right #spot{
-	margin-top:10px;
-	width: 10px;
-	height: 10px;
-	border-color: #888BA2;
+	width: 2px;
+	height: 2px;
+	/*border-color: #888BA2*/
 	display: inline-block;
+	background-color:#888BA2;
+	border-radius: 2px 2px;
+	position: absolute;
+	top:58px;
+	left:46%;
+
 
 
 }
@@ -77,6 +85,7 @@ body,html{
 	bottom: 0;
 	width: 100%;
 	margin-top: 10px;
+	position: fixed;
 }
 .footer .active{
 	float: left;
@@ -113,8 +122,23 @@ body,html{
 	.right>img{
 		margin-left:0px;
 	}
+	.right #spot{
+		top:53px;
+		left:52%;
+	}
 
 }
+
+
+@media all and(max-width: 375px){
+	.right #spot{
+		top:53px;
+		left:50%;
+	}
+}
+
+
+
 .jz{
 	
 	position: absolute;

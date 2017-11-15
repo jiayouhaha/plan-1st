@@ -20,22 +20,46 @@ $(function(){
 	template.helper('typeFilter',function(state){
 		switch(state){
 			case 1:
-				return "娱乐";
-				break;
+			return "娱乐";
+			break;
 			case 2:
-				return '社会';
-				break;
+			return '社会';
 			case 3:
-				return "科技";
-				break;
-			case 4:
-				return '其他';
-				break;
+			return "科技";
+			break;
+			default:
+			return '其他';
+			break;
 
 		}
 	})
 
-
+	$(window).scroll(function(){
+		//视窗上面隐藏掉的部分，即滚动条滚动的距离
+		　　var scrollTop = $(this).scrollTop();
+			//页面高度
+		　　var scrollHeight = $(document).height();
+			//浏览器窗口高度
+		　　var windowHeight = $(this).height();
+		　　if(scrollTop + windowHeight == scrollHeight){
+// 　　　　alert("已经到最底部了！");
+		　　$.ajax({
+			url:'http://restaurant.yijiahotel.shop/v1/news/2/10',
+			type:'GET',
+			dataType:'json',
+			data:null,
+			success:function(data){
+				// $('.jz').hide();
+				// $('.mask').hide();
+				// $('.xr').show();
+				var html=template('remTemplate',{list:data.data});
+					// console.log(html)
+					$('.xr').html(html)
+				}
+			})
+		　　　　
+		　　}
+	});
 
 
 
