@@ -52,10 +52,12 @@ $(function(){
 				// $('.jz').hide();
 				// $('.mask').hide();
 				// $('.xr').show();
+				scrollTop=0;
 				var html=template('remTemplate',{list:data.data});
 					// console.log(html)
 					$('.xr').html(html)
 				}
+				
 			})
 		　　　　
 		　　}

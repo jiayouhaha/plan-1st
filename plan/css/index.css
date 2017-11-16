@@ -23,7 +23,7 @@ body,html{
 
 }
 .right{
-	width:67%;
+	width:61%;
 	margin-left:10px;
 	height:80px;
 	float:left;
@@ -34,6 +34,8 @@ body,html{
 	font-weight:bold;
 	margin-bottom: 10px;
 	color: #4E5662;
+	height: 38px;
+
 }
 .right>em{
 	width: 11%;
@@ -45,6 +47,8 @@ body,html{
 	text-align: center;
 	margin-right: 10px;
 	color:#888BA2;
+	
+
 }
 .right span{
 	color:#888BA2;
@@ -69,7 +73,7 @@ body,html{
 	border-radius: 2px 2px;
 	position: absolute;
 	top:58px;
-	left:46%;
+	left:179 px;
 
 
 
@@ -130,10 +134,9 @@ body,html{
 }
 
 
-@media all and(max-width: 375px){
-	.right #spot{
-		top:53px;
-		left:50%;
+@media all and (min-width:320px) and (max-width:375px){
+	.right{
+		width: 66%;
 	}
 }
 
