@@ -1,4 +1,5 @@
 $(function(){
+	var totalData=[];
 	$.ajax({
 		url:'http://restaurant.yijiahotel.shop/v1/news/1/10',
 		//获取数据用get方法，参数放在url上
@@ -11,7 +12,10 @@ $(function(){
 			$('.mask').hide();
 			$('.xr').show();
 			//将要遍历的赋值给List
-			var html=template('remTemplate',{list:data.data});
+
+			totalData=data.data.concat(totalData);
+
+			var html=template('remTemplate',{list:totalData});
 			// console.log(html)
 			$('.xr').html(html)
 		}
@@ -53,7 +57,8 @@ $(function(){
 				// $('.mask').hide();
 				// $('.xr').show();
 				scrollTop=0;
-				var html=template('remTemplate',{list:data.data});
+				totalData=data.data.concat(totalData);
+				var html=template('remTemplate',{list:totalData});
 					// console.log(html)
 					$('.xr').html(html)
 				}
