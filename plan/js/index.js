@@ -11,10 +11,11 @@ $(function(){
 			$('.jz').hide();
 			$('.mask').hide();
 			$('.xr').show();
-			//将要遍历的赋值给List
-
+			
+			console.log(totalData)
 			totalData=data.data.concat(totalData);
-
+			//将要遍历的赋值给List
+			console.log(totalData)	
 			var html=template('remTemplate',{list:totalData});
 			// console.log(html)
 			$('.xr').html(html)
@@ -67,6 +68,13 @@ $(function(){
 		　　　　
 		　　}
 	});
+
+	// if(data.data.hot==1){
+	// 	$('.rihght>img').attr('src')='img/icon_hot.png'
+	// }else{
+	// 	$('.rihght>img').attr('src')=''
+	// }
+
 
 
 

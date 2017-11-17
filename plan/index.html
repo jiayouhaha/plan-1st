@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>推荐</title>
+	<title>Document</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="http://dialer.cdn.cootekservice.com/web/sdk/reset/reset.css"
+	rel="stylesheet"/>
 	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
 </head>
 <body>
 	<div class="jz">
@@ -23,38 +26,34 @@
 			<img src="img/icon_page_active.png" alt="" >
 			<h5 style="color:#D27A76;">推荐</h5>
 		</div>
-
 		<div class="video">
 			<img src="img/icon_video.png" alt="">
 			<h5>推荐</h5>
 		</div>
 	</div>
 	<script type="text/html" id='remTemplate'>
-		<!-- list为一个数组 -->
 		{{each list}}
 		<div class="content">
-			<div class="content-in">
-				<div class="left f_left"><img src="{{$value.cover_img}}" alt="" height="60" width='60'></div>		
-				<div class="right">
-					<p>{{$value.title}}</p>
+			<div class="left f_left">
+				<img src="{{$value.cover_img}}" alt="" height="70" width='70'>
+			</div>
+			<div class="right f_left">
+				<p>{{$value.title}}</p>
+				<div class="right-in">
 					<em>{{$value.type | typeFilter}}</em>
 					<span>{{$value.comments_num}}</span>
 					<span>评论</span>
 					<span id="spot"></span>
-					<i>{{$value.created_at}}</i>
-					<img src="{{$value.hot}}" alt="" height="20" width='20'>
+					<i>{{$value.updated_at}}</i>
+					<img src="img/icon_hot.png" alt="" height="15" width='15'>
 				</div>
 			</div>
-			<div class="line"></div>
 		</div>
 		{{/each}}
 	</script>
-<!-- 	rem插件 -->
 	<script type="text/javascript" src='http://dialer.cdn.cootekservice.com/web/sdk/reset/reset.js'></script>
 	<script type="text/javascript" src='js/jquery-2.1.1.min.js'></script>
 	<script type="text/javascript" src='js/template.js'></script>
 	<script type="text/javascript" src='js/index.js'></script>
-
-
 </body>
 </html>
