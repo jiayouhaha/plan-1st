@@ -8,7 +8,6 @@
 	rel="stylesheet"/>
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-
 </head>
 <body>
 	<div class="jz">
@@ -45,7 +44,9 @@
 					<span>评论</span>
 					<span id="spot"></span>
 					<i>{{$value.updated_at}}</i>
+					{{if $value.hot==1}}
 					<img src="img/icon_hot.png" alt="" height="15" width='15'>
+					{{/if}}
 				</div>
 			</div>
 		</div>
@@ -54,6 +55,6 @@
 	<script type="text/javascript" src='http://dialer.cdn.cootekservice.com/web/sdk/reset/reset.js'></script>
 	<script type="text/javascript" src='js/jquery-2.1.1.min.js'></script>
 	<script type="text/javascript" src='js/template.js'></script>
-	<script type="text/javascript" src='js/index.js'></script>
+	<script type="text/javascript" src='js/index1.js'></script>
 </body>
 </html>
