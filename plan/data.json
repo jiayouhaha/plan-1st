@@ -1,0 +1,105 @@
+{
+  "data": [{
+    "id": 1,
+    "cover_img": "http:\/\/p9.pstatp.com\/list\/190x124\/15120002d7fba9683cb0",
+    "title": "看完纽约高中的中文试卷，我可能是个假中国人",
+    "url": "www.baidu.com",
+    "type": 1,
+    "comments_num": 3,
+    "created_at": "2017-10-12 23:24:44",
+    "hot": 0,
+    "updated_at": "2017-10-12 23:23:52"
+  }, {
+    "id": 2,
+    "cover_img": "http:\/\/p1.pstatp.com\/list\/190x124\/15320005e072c26bdd8a",
+    "title": "多亏没有嫁给陈思诚，你看她们现在过得多好",
+    "url": "www.baidu.com",
+    "type": 2,
+    "comments_num": 4,
+    "created_at": "2017-10-12 23:25:25",
+    "hot": 1,
+    "updated_at": "2017-10-12 23:25:32"
+  }, {
+    "id": 3,
+    "cover_img": "http:\/\/p3.pstatp.com\/list\/190x124\/1534000402014570b49d",
+    "title": "农村人补缴15年养老保险，一月可以领多少钱？",
+    "url": "www.baidu.com",
+    "type": 3,
+    "comments_num": 1,
+    "created_at": "2017-10-12 23:26:15",
+    "hot": 0,
+    "updated_at": "2017-10-12 23:26:18"
+  }, {
+    "id": 4,
+    "cover_img": "ttp:\/\/p3.pstatp.com\/list\/190x124\/149f00054897848c0760",
+    "title": "清朝灭亡后 爱新觉罗后代去哪儿了",
+    "url": "www.baidu.com",
+    "type": 1,
+    "comments_num": 0,
+    "created_at": "2017-10-12 23:26:59",
+    "hot": 0,
+    "updated_at": "2017-10-12 23:27:02"
+  }, {
+    "id": 5,
+    "cover_img": "http:\/\/p1.pstatp.com\/list\/190x124\/155f000956e37212a6e1",
+    "title": "蔡英文过境旧金山 获美国60部哈雷重机开道",
+    "url": "www.baidu.com",
+    "type": 1,
+    "comments_num": 2,
+    "created_at": "2017-10-12 23:27:37",
+    "hot": 0,
+    "updated_at": "2017-10-12 23:27:39"
+  }, {
+    "id": 6,
+    "cover_img": "http:\/\/p1.pstatp.com\/list\/190x124\/1538000660258fd2e4b6",
+    "title": "贪官们之前爱去的会所饭店现在如何了？",
+    "url": "www.baidu.com",
+    "type": 1,
+    "comments_num": 10,
+    "created_at": "2017-10-12 23:28:17",
+    "hot": 1,
+    "updated_at": "2017-10-12 23:28:23"
+  }, {
+    "id": 7,
+    "cover_img": "http:\/\/p3.pstatp.com\/list\/190x124\/15a10000be5f7c0aff14",
+    "title": "里皮国足首胜——无大牌无土炮中国纯粹足球的一场胜利",
+    "url": "www.baidu.com",
+    "type": 2,
+    "comments_num": 14,
+    "created_at": "2017-10-12 23:29:22",
+    "hot": 1,
+    "updated_at": "2017-10-12 23:29:18"
+  }, {
+    "id": 8,
+    "cover_img": "http:\/\/p1.pstatp.com\/list\/190x124\/1538000660258fd2e4b6",
+    "title": "快讯！美国退出联合国教科文组织 已欠费5亿美元",
+    "url": "www.baidu.com",
+    "type": 1,
+    "comments_num": 12,
+    "created_at": "2017-10-12 23:31:09",
+    "hot": 0,
+    "updated_at": "2017-10-12 23:30:58"
+  }, {
+    "id": 9,
+    "cover_img": "http:\/\/p1.pstatp.com\/list\/190x124\/1538000660258fd2e4b6",
+    "title": "64岁龚雪近照曝光，流氓大案后旅居美国20多年，现",
+    "url": "www.t.cn",
+    "type": 1,
+    "comments_num": 0,
+    "created_at": "2017-10-12 23:31:56",
+    "hot": 0,
+    "updated_at": "2017-10-12 23:31:50"
+  }, {
+    "id": 10,
+    "cover_img": "ttp:\/\/p3.pstatp.com\/list\/190x124\/149f00054897848c0760",
+    "title": "日本的人口密度是中国的2.5倍，为什么他们住的都是",
+    "url": "www.b.cn",
+    "type": 2,
+    "comments_num": 0,
+    "created_at": "2017-10-12 23:32:42",
+    "hot": 0,
+    "updated_at": "2017-10-12 23:32:36"
+  }],
+  "status_code": 0,
+  "message": "获取新闻成功"
+}

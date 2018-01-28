@@ -4,7 +4,7 @@ $(function(){
 	var loadDataStatus=0;//0:不在加载中;1:加载中;2:所有数据加载完毕
 	var totalData=[];
 	//刚进入页面时调用getData,将page、pagesize两个变量传过去
-	getData(page,pagesize)
+	getFakeData(page,pagesize)
 	
 	$(window).scroll(function(){
 		//视窗上面隐藏掉的部分，即滚动条滚动的距离
@@ -51,6 +51,30 @@ $(function(){
 
 				})
 	}
+
+
+	function getFakeData(){
+		$.getJSON('data.json',function(data){
+				//data.data.length==0表示所有数据加载完毕
+				if(data.data.length==0){
+					loadDataStatus=2;
+
+				}
+				$('.jz').hide();
+				$('.mask').hide();
+				$('.xr').show();
+				totalData=data.data.concat(totalData);
+				//将要遍历的赋值给List
+				// console.log(totalData)
+				var html=template('remTemplate',{list:totalData});
+				// console.log(html)
+				$('.xr').html(html)
+
+		});
+	}
+
+
+
 })
 
 
